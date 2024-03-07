@@ -23,7 +23,8 @@ Stop the vehicle on red signal hits
 R={ +1 ,ready to go gignal returns green 0 , otherwise }
 
 ### Graphical Representation
-![ex1](https://github.com/ganesha360/mdp-representation/assets/120884552/5f6442e4-87c0-441e-b9e9-b0b04974399d)
+![rlex](https://github.com/ganesha360/mdp-representation/assets/120884552/628b850a-f159-4d5a-b295-b17e4c5a95f8)
+
 
 
 ## PYTHON REPRESENTATION:
