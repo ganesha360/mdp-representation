@@ -38,7 +38,7 @@ P={0: {0: [(1.0, 0, 0.0, True)],
 ```
 
 ## OUTPUT:
-![ex2](https://github.com/ganesha360/mdp-representation/assets/120884552/039add8a-052b-489d-9a42-80a61271837c)
+
 
 
 ## RESULT:
