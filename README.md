@@ -38,6 +38,7 @@ P={0: {0: [(1.0, 0, 0.0, True)],
 ```
 
 ## OUTPUT:
+![image](https://github.com/ganesha360/mdp-representation/assets/120884552/83351e01-d14e-4ef5-b927-9d1eab07e7ee)
 
 
 
