@@ -1,48 +1,61 @@
 # MDP REPRESENTATION
 
 ## AIM:
-To represent any one real-world problem in MDP form
+The aim of this MDP is to model the decision-making process of a person while coding, considering two levels of concentration - full concentration and half concentration, and to maximize productivity
 
 ## PROBLEM STATEMENT:
 
 ### Problem Description
-To maintain the traffic signal controls .The role of the agent is to access to change the signals colour with representative of traffics.
-### State Space
-{ Red , Green , Yellow } = { 0 , 1 , 2 }
 
+#### In this scenario ,The team wants to win the football tournament,they has two choice,one is move right and reach the final win the cupand another one is move left ,get knocked from tournament.
+
+### State Space
+
+Knocked out ,Semi's ,Final.
 
 ### Sample State
-Red
+Semi's.
+
 ### Action Space
-{ Stop the vehicle on red signal hits , ready to go } -> { 0 , 1 }
+
+Right , Left
 
 ### Sample Action
-Stop the vehicle on red signal hits
+
+Right(1) and Left(0).
 
 ### Reward Function
-R={ +1 ,ready to go gignal returns green 0 , otherwise }
+
+Right= 1,Left= 0
 
 ### Graphical Representation
-![rlex](https://github.com/ganesha360/mdp-representation/assets/120884552/628b850a-f159-4d5a-b295-b17e4c5a95f8)
+
+![WhatsApp Image 2024-02-23 at 09 41 04_3a10ebf9](https://github.com/Naveen22009215/mdp-representation/assets/119401470/bcf2e24b-b3c6-4108-8f95-ffd7830c5005)
 
 
 
 ## PYTHON REPRESENTATION:
-```python
-P={0: {0: [(1.0, 0, 0.0, True)],
-       1: [(1.0, 0, 0.0, True)]},
-   1: {0: [(1.0, 0, 0.0, True)],
-       1: [(1.0, 2, 1.0, True)]},
-   2: {0: [(1.0, 2, 0.0, True)],
-       1: [(1.0, 2, 0.0, True)]}
-  }
+```
+mdp = {
+    "Final": {
+         0 : [(0.7, "Semi's", 0, False),(0.3, "Final", 1, True)],
+        1 : [(0.8, "Final", 1, True),(0.2, "Semi's", 0, False)]
+    },
+    "Semi's": {
+        0 : [(0.8, "Knocked out", 0, False),(0.2, "Semi's", 0, False)],
+        1 : [(0.9, "Final", 1, True),(0.1, "Semi's", 0, False)]
+    },
+    "Knocked out": {
+        0 : [(0.8, "Knocked out", 0, False),(0.2, "Semi's", 0, False)],
+        1 : [(0.7, "Semi's`", 0, False),(0.3, "Knocked out", 0.0, False)]
+    }
+}
 ```
 
 ## OUTPUT:
-![image](https://github.com/ganesha360/mdp-representation/assets/120884552/83351e01-d14e-4ef5-b927-9d1eab07e7ee)
-
+![image](https://github.com/Naveen22009215/mdp-representation/assets/119401470/4d6cc091-559e-4cbd-8210-f217ed484f85)
 
 
 ## RESULT:
-Thus the given real world problem is successfully represented in a MDP form .
+The result of solving this MDP would be an optimal policy that tells the person which action to take in each state to maximize their productivity while coding.
 
